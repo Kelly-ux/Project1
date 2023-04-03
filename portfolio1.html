@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./main.css">
+    <script>// This code will add an active class to the currently active navigation link
+        let navLinks = document.querySelectorAll('nav ul li a');
+        
+        navLinks.forEach(link => {
+          link.addEventListener('click', function() {
+            navLinks.forEach(link => link.classList.remove('active'));
+            this.classList.add('active');
+          });
+        });
+        </script>
+    </head>
+<body>
+    <header class="top">
+        <nav class="style">
+            <ul>
+                <li><a href="#About">1. About Me</a></li>
+                <li><a href="Experience">2. Experience</a></li>
+                <li><a href="#work">3. Work</a></li>
+                <li><a href="#Contact">4. Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--In relation to the about section-->
+    <h1 class="impro">Hey <br> I'm Hilda.</h1> 
+    <h1>I build you a well drafted settlement.</h1>
+    <p>Hello! My name is Hilda and I enjoy survey and providing well drafted settlement. My interest in web development started back in 2012 when I decided to try editing custom Tumblr themes — turns out hacking together a custom reblog button taught me a lot about HTML & CSS!
+        Fast-forward to today, and I've had the privilege of working at an advertising agency, a start-up, a huge corporation, and a student-led design studio. My main focus these days is building accessible, inclusive products and digital experiences at Upstatement for a variety of clients.
+         I also recently launched a course that covers everything you need to build a web app with the Spotify API using Node & React.
+    </p> <hr id="space">
+    <div class="beauty">
+    <img src="work-image/1000031642.jpg">
+    <img src="work-image/1000031652.jpg">
+    <img src="work-image/1000031657.jpg">
+    </div>
+    <br>
+    <aside class="area">
+     <h2>
+        <span>E</span>
+        <span>X</span>
+        <span>P</span>
+        <span>E</span>
+        <span>R</span>
+        <span>I</span>
+        <span>E</span>
+        <span>N</span>
+        <span>C</span>
+        <span>E</span> 
+     </h2> 
+    </aside>
+    <div class="experience">
+        <img src="work-image/1000031640.jpg">
+        <img src="work-image/1000031670.jpg">
+    </div>
+        
+</body>
+</html>
